@@ -4,6 +4,8 @@
 
 Medibot Pro is a comprehensive healthcare assistance platform that integrates multiple interactive bots to support users' health needs. The project consists of the following components:
 
+https://github.com/user-attachments/assets/c477ec49-a9fc-4add-aa77-9ed0c5090e1c
+
 ## Components
 
 ### Homepage
