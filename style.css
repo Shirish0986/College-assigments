@@ -384,6 +384,107 @@ body {
 
 /* Support Page */
 
+/* Support Page */
+.support-page {
+    height: 100%;
+    display: flex;
+}
+
+.support-info {
+    height: 90%;
+    width: 50%;
+    margin: 3vw 0vw 5vw 7vw;
+    padding: 2vw 1vw;
+    font-size: 1.4vw;
+    color: rgb(122, 0, 0);
+}
+
+.support-info p {
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.support-info table {
+    width: 100%;
+    font-size: 1.4vw;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.support-info th,
+.support-info td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 1vw;
+    border: 2px solid var(--primarycolor); /* Custom border color */
+}
+
+.support-info th {
+    background-color: var(--primarycolor);
+    color: rgb(18, 13, 13);
+    font-weight: 700;
+    border-bottom: 3px solid var(--primarycolor); /* Thicker border for header */
+}
+
+.support-info td {
+    font-size: 1.2vw;
+}
+
+.support-info .material-symbols-outlined {
+    font-size: 2vw;
+    color: var(--primarycolor);
+}
+
+/* Additional styles for a clean table design */
+.table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table th,
+.table td {
+    border: 1px solid #dee2e6; /* Light gray border for cells */
+}
+
+.table thead th {
+    border-bottom: 3px solid var(--primarycolor); /* Thicker border for header */
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #f8f9fa;
+}
+
+.table tbody tr:hover {
+    background-color: #b8bbbe; /* Hover effect for rows */
+}
+
+.support-info table {
+    width: 100%;
+    font-size: 1.4vw;
+}
+
+.support-info th,
+.support-info td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 1vw;
+}
+
+.support-info th {
+    background-color: var(--primarycolor);
+    color: white;
+    font-weight: 700;
+}
+
+.support-info td {
+    font-size: 1.2vw;
+}
+
+.support-info .material-symbols-outlined {
+    font-size: 2vw;
+    color: var(--primarycolor);
+}
+
 .support-page {
     height: 100%;
     display: flex;

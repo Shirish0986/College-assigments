@@ -48,58 +48,49 @@
 
             <div class="support-info">
                 <p>Helpline Numbers:</p>
-                <div>
-                    <span class="material-symbols-outlined">medical_services</span>
-                    112 - National Emergency Number
-                </div>
-
-                <div>
-                    <span class="material-symbols-outlined">local_police</span>
-                    100 - Police
-                </div>
-
-                <div>
-                    <span class="material-symbols-outlined">fire_truck</span>
-                    101 - Fire
-                </div>
-
-                <div>
-                    <span class="material-symbols-outlined">ambulance</span>
-                    102 - Ambulance
-                </div>
-
-                <div>
-                    <span class="material-symbols-outlined">woman</span>
-                    1091 - Women Helpline
-                </div>
-
-                <div>
-                    <span class="material-symbols-outlined">car_crash</span>
-                    1073 - Road Accident Emergency Service
-                </div>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Icons</th>
+                            <th>Call</th>
+                            <th>Service</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="material-symbols-outlined">medical_services</span></td>
+                            <td>112</td>
+                            <td>National Emergency Number</td>
+                        </tr>
+                        <tr>
+                            <td><span class="material-symbols-outlined">local_police</span></td>
+                            <td>100</td>
+                            <td>Police</td>
+                        </tr>
+                        <tr>
+                            <td><span class="material-symbols-outlined">fire_truck</span></td>
+                            <td>101</td>
+                            <td>Fire</td>
+                        </tr>
+                        <tr>
+                            <td><span class="material-symbols-outlined">ambulance</span></td>
+                            <td>102</td>
+                            <td>Ambulance</td>
+                        </tr>
+                        <tr>
+                            <td><span class="material-symbols-outlined">woman</span></td>
+                            <td>1091</td>
+                            <td>Women Helpline</td>
+                        </tr>
+                        <tr>
+                            <td><span class="material-symbols-outlined">car_crash</span></td>
+                            <td>1073</td>
+                            <td>Road Accident Emergency Service</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-
-
-            <div class="support-right">
-                <div class="support-right-bot">
-                    Ask me a medical question..
-                    <form action="/support" method="post">
-                        <textarea name="any-bot-input" wrap="soft"
-                            placeholder="For example, you can ask about a specific condition, medication, or general health advice...."
-                            required></textarea>
-                        <button type="submit" class="">Search</button>
-                    </form>
-                    <br>
-                    Result:
-                    <div class="any-bot-output">
-                        <p>
-                            {{clickMsg}}
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+              
 
 
         <div class="feedback-form">
