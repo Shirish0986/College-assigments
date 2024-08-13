@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medibot Pro | Your Personal Health Assistant</title>
+    <link rel="shortcut icon" href="heart-beat.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/futura-font@1.0.0/styles.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="nav">
+            <a href="/" id="nav-logo">
+                <h2>MediBot Pro</h2>
+                <span class="material-symbols-outlined">ecg_heart</span>
+            </a>
+
+            <div class="nav-part2">
+                <a href="/medicalDiag.html">
+                    <h4>Medical Diagnosis Bot</h4>
+                </a>
+                <a href="/physiobot.html">
+                    <h4>Physiotherapy Bot</h4>
+                </a>
+                <a href="/support.html">
+                    <h4>Quick Support</h4>
+                </a>
+                <a href="/about.html">
+                    <h4>About Team</h4>
+                </a>
+
+                <a href="/report.html">
+                    <span class="material-symbols-outlined">report</span>
+                </a>
+
+            </div>
+        </div>
+        <div class="bot-info">
+            This is a healthcare chatbot that uses Worqhat's model to interact with users, ask about their symptoms, and
+            provide preliminary health advice and information.
+        </div>
+
+        <div class="medical-container">
+
+            <div class="medical-left">
+                <div class="medical-title">
+                    Medical Diagnosis Bot
+                </div>
+
+                <form method="post" action="/medicalDiag">
+                    <!-- INPUT FIELDS -->
+                    <div class="input-fields">
+
+                        <div class="input-name">
+                            <p id="normal-text-medical">Name</p>
+                            <input type="text" name="name" id="name" class="input-name-css"
+                                placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-age">
+                            <p id="normal-text-medical">Age</p>
+                            <input type="number" name="age" id="age" class="input-number-css" placeholder="Age"
+                                required>
+                        </div>
+
+                        <div class="input-gender">
+                            <p id="normal-text-medical">Gender</p>
+                            <select name="gender" id="gender" class="input-select-css" required>
+                                <option selected="selected" disabled>Choose Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="input-symptoms">
+                            <p id="normal-text-medical">Please tell us about your symptoms</p>
+                            <textarea name="symptoms" rows="14" cols="12" wrap="soft" class="input-symptoms-css"
+                                placeholder="Please tell us about your symptoms" required></textarea>
+                        </div>
+
+                        <div class="input-duration">
+                            <p id="normal-text-medical">Duration of your Symptoms (in days)</p>
+                            <input type="number" name="duration" id="duration" class="input-number-css"
+                                placeholder="Duration of Symptoms (in days)" required>
+                        </div>
+
+                        <div class="input-severity">
+                            <p id="normal-text-medical">Severity of your symptoms</p>
+                            <select name="severity" id="severity" class="input-select-css" required>
+                                <option selected="selected" disabled>Choose Severity</option>
+                                <option value="low">Low</option>
+                                <option value="mild">Mild</option>
+                                <option value="severe">Severe</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="input-submit-button">
+                            Diagnose the disease
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="medical-right">
+                <img src="doctorImg2.png" alt="doctor Image">
+            </div>
+
+        </div>
+
+
+        <p id="diag-result-text">Clicking on Diagnose button to get result:</p>
+        <div class="diagnosis-output">
+
+            <div class="diagnosis-actual-output">
+                <p>
+                    {{ output }}
+                </p>
+            </div>
+
+            <div class="diagnosis-output-image">
+                <img src="diagOutput.png" alt="doctor output">
+            </div>
+        </div>
+</body>
+
+</html>
