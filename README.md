@@ -3,8 +3,6 @@
 **Link:** [medibotpro.vercel.app](https://medibotpro.vercel.app)
 
 Medibot Pro is a comprehensive healthcare assistance platform that integrates multiple interactive bots to support users' health needs. The project consists of the following components:
-[![Demo Video](http://img.youtube.com/vi/watch?v=kt3iGwQ_kAw/0.jpg)](https://www.youtube.com/watch?v=watch?v=kt3iGwQ_kAw)
-
 
 ## Components
 
